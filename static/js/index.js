@@ -15,7 +15,7 @@ function char_count(inc_lf,inc_space){
 }
 
 function onChangeText(){
-  document.querySelector('#raw_count').value = document.querySelector('#textarea').length;
+  document.querySelector('#raw_count').value = document.querySelector('#textarea').value.length;
   document.querySelector('#word_count').value = char_count(true,true);
   document.querySelector('#ns_count').value = char_count(true,false);
   document.querySelector('#nr_count').value = char_count(false,true);
