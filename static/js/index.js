@@ -25,4 +25,5 @@ function onChangeText(){
 function clearTextArea(){
   console.log('DEBUG');
   document.querySelector('#textarea').value = '';
+  onChangeText();
 }
