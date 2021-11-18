@@ -21,3 +21,8 @@ function onChangeText(){
   document.querySelector('#nr_count').value = char_count(false,true);
   document.querySelector('#nsr_count').value = char_count(false,false);
 }
+
+function clearTextArea(){
+  console.log('DEBUG');
+  document.querySelector('#textarea').value = '';
+}
