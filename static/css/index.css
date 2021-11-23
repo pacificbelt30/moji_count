@@ -53,55 +53,56 @@
   padding-right: 20px;
 }
 button.btn {
-    display: block;
-    max-width: 350px;
-    margin: 0 auto;
-    padding: 1.5rem 3.0rem;
-    background-color: #1755aa;
-    border-radius: 8px;
+  display: block;
+  color: #ffffff;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 1.5rem 3.0rem;
+  background-color: #1755aa;
+  border-radius: 8px;
   box-sizing: border-box;
-    text-decoration: none;
-    transition: 0.3s;
+  text-decoration: none;
+  transition: 0.3s;
 }
 button.btn span.bl__text {
-    display: block;
-    position: relative;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    padding-left: 30px;
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 30px;
 }
 button.btn span.bl__text:before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: #ffffff;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
 }
 button.btn span.bl__text:after {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-top: 3px solid #1755aa;
-    border-right: 3px solid #1755aa;
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #1755aa;
+  border-right: 3px solid #1755aa;
   box-sizing: border-box;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 0;
-    left: 5px;
-    bottom: 0;
-    margin: auto;
-    transition: 0.3s;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 5px;
+  bottom: 0;
+  margin: auto;
+  transition: 0.3s;
 }
 button.btn:hover {
-    background-color: #01b5d0;
+  background-color: #01b5d0;
 }
 button.btn:hover span.bl__text:after {
-    border-top: 3px solid #01b5d0;
-    border-right: 3px solid #01b5d0;
+  border-top: 3px solid #01b5d0;
+  border-right: 3px solid #01b5d0;
 }
