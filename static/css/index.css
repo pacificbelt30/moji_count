@@ -52,7 +52,7 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-a.btn {
+button.btn {
     display: block;
     max-width: 350px;
     margin: 0 auto;
@@ -63,7 +63,7 @@ a.btn {
     text-decoration: none;
     transition: 0.3s;
 }
-a.btn span.bl__text {
+button.btn span.bl__text {
     display: block;
     position: relative;
     color: #fff;
@@ -71,7 +71,7 @@ a.btn span.bl__text {
     text-align: center;
     padding-left: 30px;
 }
-a.btn span.bl__text:before {
+button.btn span.bl__text:before {
     content: '';
     width: 20px;
     height: 20px;
@@ -83,7 +83,7 @@ a.btn span.bl__text:before {
     bottom: 0;
     margin: auto;
 }
-a.btn span.bl__text:after {
+button.btn span.bl__text:after {
     content: '';
     width: 8px;
     height: 8px;
@@ -98,10 +98,10 @@ a.btn span.bl__text:after {
     margin: auto;
     transition: 0.3s;
 }
-a.btn:hover {
+button.btn:hover {
     background-color: #01b5d0;
 }
-a.btn:hover span.bl__text:after {
+button.btn:hover span.bl__text:after {
     border-top: 3px solid #01b5d0;
     border-right: 3px solid #01b5d0;
 }
