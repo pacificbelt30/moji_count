@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>論文の改行文字削除</title>
+    <meta name="description" content="論文コピペしたときの改行を消す">
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <script src="static/js/index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <h1>論文の改行文字削除(英語，Japanese)</h1>
+      </div>
+      <div id="input_area">
+        <textarea id="textarea" name="textarea" rows="10" class="form-control" placeholder="入力された文字をカウントします．(アルファベットの連続は1文字としてカウントします)" oninput="onChangeText(true)" wrap="soft"></textarea>
+      </div>
+      <div id="button_area">
+        <button class="btn" type="button" onclick="clearTextArea()">クリア</button>
+      </div>
+      <div id="output_area">
+        <div class="output">
+          <label class="output_label" for="">文字数(engの場合は語数)：</label>
+          <input id="word_count" class="output_form" value="0">
+        </div>
+        <div class="output">
+          <label class="output_label" for="">文字数：</label>
+          <input id="raw_count" class="output_form" value="0">
+        </div>
+        <div class="output">
+          <label class="output_label" for="">文字数(空白なし)：</label>
+          <input id="ns_count" class="output_form" value="0">
+        </div>
+        <div class="output">
+          <label class="output_label" for="">文字数(改行なし)：</label>
+          <input id="nr_count" class="output_form" value="0">
+        </div>
+        <div class="output">
+          <label class="output_label" for="">文字数(空白，改行なし)：</label>
+          <input id="nsr_count" class="output_form" value="0">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
