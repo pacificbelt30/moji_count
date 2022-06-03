@@ -14,16 +14,23 @@ function char_count(inc_lf,inc_space){
   return sentences.length;
 }
 
-function onChangeText(){
+function onChangeText(paper_flag){
   document.querySelector('#raw_count').value = document.querySelector('#textarea').value.length;
   document.querySelector('#word_count').value = char_count(true,true);
   document.querySelector('#ns_count').value = char_count(true,false);
   document.querySelector('#nr_count').value = char_count(false,true);
   document.querySelector('#nsr_count').value = char_count(false,false);
+  if(paper_flag){
+    document.querySelector('#textarea').value = document.querySelector('#textarea').value.replace(/-?\n/g,'');
+    navigator.clipboard.writeText(document.querySelector('#textarea').value).then(
+      e => console.log(document.querySelector('#textarea').value),
+    );
+  }
+
 }
 
 function clearTextArea(){
   console.log('DEBUG');
   document.querySelector('#textarea').value = '';
-  onChangeText();
+  onChangeText(false);
 }
