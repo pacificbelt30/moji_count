@@ -21,7 +21,7 @@ function onChangeText(paper_flag){
   document.querySelector('#nr_count').value = char_count(false,true);
   document.querySelector('#nsr_count').value = char_count(false,false);
   if(paper_flag){
-    document.querySelector('#textarea').value = document.querySelector('#textarea').value.replace(/-\n/g,'').replace(/\n/g,' ').replace(/%/g,'\\%').replace(/’/g,'\'').replace(/‘/g,'\'').replace(/–/g,'--').replace(/\\+%/g,'\\%').replace(/‘‘/g,'``').replace(/”/g,'\'\'');
+    document.querySelector('#textarea').value = document.querySelector('#textarea').value.replace(/-\n/g,'').replace(/\n/g,' ').replace(/%/g,'\\%').replace(/’/g,'\'').replace(/‘/g,'`').replace(/–/g,'--').replace(/\\+%/g,'\\%').replace(/‘‘/g,'``').replace(/”/g,'\'\'');
     navigator.clipboard.writeText(document.querySelector('#textarea').value).then(
       e => console.log(document.querySelector('#textarea').value),
     );
